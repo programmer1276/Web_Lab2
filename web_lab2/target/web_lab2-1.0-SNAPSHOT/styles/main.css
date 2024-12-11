@@ -1,0 +1,124 @@
+.main {
+    width: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#layout-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-left-section, .main-right-section {
+    vertical-align: top;
+    padding: 20px;
+}
+
+.main-left-section {
+    width: 60%;
+}
+
+.main-right-section {
+    width: 40%;
+}
+
+.area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Адаптивная ширина */
+  max-width: 600px; /* Максимальная ширина графика */
+  aspect-ratio: 1 / 1; /* Соотношение сторон 1:1 (квадратный холст) */
+  margin: 0 auto; /* Центровка графика */
+  background-color: #3e3e3e; /* Цвет контейнера */
+  border: 2px solid #000; /* Рамка для контейнера */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень */
+  border-radius: 10px; /* Скругленные углы */
+  margin-left: 0px;
+}
+
+/*.area canvas {
+    height: 600px;
+    width: 600px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}*/
+
+.checkboxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.coords-form {
+    width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+}
+
+input, select {
+    padding: 12px 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+button {
+    border: none;
+    padding: 12px 8px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(60, 60, 230);
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+button:hover {
+    background-color: rgb(16, 16, 157);
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.active {
+  background-color: rgb(16, 16, 157);
+}
+
+#response-table {
+    width: 100%;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#response-table th, #response-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+
+  .validation-successed {
+    font-size: 15px;
+    color: rgb(42, 200, 42);
+  }
+
+  .validation-failed {
+    font-size: 15px;
+    color: rgb(227, 58, 58);
+  }

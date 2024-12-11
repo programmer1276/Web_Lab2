@@ -1,0 +1,54 @@
+.left-section {
+    text-align: center;
+    width: 20%; /* Регулируйте ширину */
+    height: 20%; /* Автоматическая высота */
+    vertical-align: middle; /* Центрирование контента по вертикали */
+}
+
+.left-section img {
+    width: 50px; /* Сделать изображение пропорциональным размеру ячейки */
+    height: auto; /* Сохранить пропорции */
+    object-fit: contain; /* Вписать изображение в ячейку без искажения */
+    vertical-align: middle;
+}
+
+.middle-section {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    text-align: right; /* Для текстов */
+}
+
+.cs-logo {
+    width: 600px; /* Устанавливаем фиксированную ширину */
+    height: 100px; /* Подстраиваем высоту */
+    display: block;
+    margin: 0 auto; /* Центрируем изображение */
+}
+
+#header-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+}
+
+#logo {
+    width: 100%; /* Таблица занимает всю ширину */
+    text-align: center; /* Центрируем текст и содержимое ячейки */
+    vertical-align: middle; /* Центрируем содержимое по вертикали */
+}
+
+#logo td {
+    text-align: center; /* Центрируем содержимое в ячейке */
+    vertical-align: middle; /* Центрируем по вертикали */
+    height: 100px; /* Устанавливаем фиксированную высоту для таблицы */
